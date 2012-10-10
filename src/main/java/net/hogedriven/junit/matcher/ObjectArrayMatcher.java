@@ -13,7 +13,6 @@ public class ObjectArrayMatcher<T> extends TypeSafeMatcher<T[]> {
         this.expected = expected;
     }
 
-    @Override
     public void describeTo(Description description) {
         description.appendText(Arrays.toString(expected));
     }

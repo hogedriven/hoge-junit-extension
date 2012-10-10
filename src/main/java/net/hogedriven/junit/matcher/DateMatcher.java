@@ -24,7 +24,6 @@ public class DateMatcher extends TypeSafeMatcher<Date> {
         this(source, defaultDateFormat);
     }
 
-    @Override
     public void describeTo(Description description) {
         description.appendValue(date);
     }
