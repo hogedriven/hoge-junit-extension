@@ -4,6 +4,12 @@ apply plugin: 'eclipse'
 group = 'net.hogedriven'
 version = '1.0-SNAPSHOT'
 
+defaultTasks 'clean', 'test'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+sourceCompatibility = '1.5'
+targetCompatibility = '1.5'
+
 repositories {
   mavenCentral()
 }
